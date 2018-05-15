@@ -9,9 +9,9 @@ Created on Tue May 15 21:09:06 2018
 num = int(input("input a number:"))
 i = 1
 ans = []
-for i in range(num):
-    if i % 3 != 0 and i % 5 != 0 :
+for i in range(num+1):
+    if i % 3 != 0 and i % 5 != 0:
         ans.append(i)
-    elif i % 3 == 0 and i % 5 == 0:
+    elif i % 15 == 0:
         ans.append(i)
 print(ans)
