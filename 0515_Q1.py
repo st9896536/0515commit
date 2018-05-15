@@ -7,5 +7,12 @@ Created on Tue May 15 21:03:27 2018
 """
 
 s = input("input:")
-result = ""  #回傳的字串
-print(s[::-1])
+ans = []
+new_list = s.split()
+for word in range(len(new_list)):
+    #print(new_list[word][::-1])
+    ans.append(new_list[word][::-1])
+
+ans_str = ' '.join(ans)
+print(ans_str)
+    
